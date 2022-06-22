@@ -1,6 +1,6 @@
 import { Container, Paper, Typography } from "@mui/material";
 import { useForm } from "react-hook-form";
-import { color } from "./Color";
+import { color } from "styles";
 
 interface PageInputProps {
   title: string;

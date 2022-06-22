@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Box, Button, createTheme, ThemeProvider } from "@mui/material";
-import Home from "./Home";
+import Home from "./screen/Home";
 
 // use Drawer component Mui to interact with responsive
 function App() {

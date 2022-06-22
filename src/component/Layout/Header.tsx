@@ -1,10 +1,10 @@
 import { Box, Container, Grid, Stack, styled, Typography } from "@mui/material";
 import React from "react";
-import userAvatar from "./assets/images/user_avatar.png";
-import vietnamFlag from "./assets/images/vietnam_flag.png";
+import userAvatar from "assets/images/user_avatar.png";
+import vietnamFlag from "assets/images/vietnam_flag.png";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import Brightness6RoundedIcon from "@mui/icons-material/Brightness6Rounded";
-import { color } from "./Color";
+import { color } from "styles";
 import { fontWeight } from "@mui/system";
 
 function Header() {
