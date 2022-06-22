@@ -1,8 +1,8 @@
 import { Box, Grid } from "@mui/material";
 import React from "react";
-import Content from "./Content";
-import Header from "./Header";
-import Sidebar from "./Sidebar";
+import Content from "../component/Layout/Content";
+import Header from "../component/Layout/Header";
+import Sidebar from "../component/Layout/Sidebar";
 
 function Home() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { Page } from "./Page";
+import { Page } from "../../screen/Page";
 
 function Content() {
   const formItem = ["userName", "passWord", "captcha"];
