@@ -5,10 +5,11 @@ import { color } from "./Color";
 interface PageInputProps {
   title: string;
   formItem: string[];
+  component: React.ReactElement;
 }
 
 const Page: React.FC<PageInputProps> = (props: PageInputProps) => {
-  const { title, formItem } = props;
+  const { title, formItem, component } = props;
 
   const { control, register, handleSubmit } = useForm();
 
@@ -27,7 +28,10 @@ const Page: React.FC<PageInputProps> = (props: PageInputProps) => {
           {title}
         </Typography>
 
-        {/* form: */}
+        {/* form: put form below */}
+
+        {/* additional Component: */}
+        {component}
       </Paper>
     </Container>
   );
