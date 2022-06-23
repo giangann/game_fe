@@ -7,4 +7,7 @@ export const color = {
   title: "#20202a",
   logo_text: "#baffcc",
   lightWhite: "#ffffffcc",
+  card_green: "#3a8653",
+  card_yellow: "#e1a82d",
+  card_blue: "#4799eb",
 };

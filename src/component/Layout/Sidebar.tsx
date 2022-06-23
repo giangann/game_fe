@@ -31,7 +31,8 @@ function Sidebar() {
       sx={{
         backgroundColor: color.sidebar,
         color: color.lightWhite,
-        height: "100vh",
+        height: "fit-content",
+        minHeight: "100vh",
         paddingLeft: "10px",
       }}
     >
