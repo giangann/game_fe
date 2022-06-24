@@ -1,7 +1,7 @@
 import { FormControlProps, OutlinedInputProps } from "@mui/material";
 import { useController, UseControllerProps } from "react-hook-form";
-import { AddControlProps, InputControl } from "component/Form";
-// import { InputStyled } from "../components/InputStyled";
+import { AddControlProps, InputControl } from "../Form";
+import { InputStyled } from "./InputStyled";
 
 export type InputProps<T> = UseControllerProps<T> &
   OutlinedInputProps &
@@ -25,16 +25,15 @@ function Input<T>({
   } = useController({ name, control, defaultValue });
 
   return (
-    // <InputControl
-    //   fieldError={error}
-    //   fullWidth={fullWidth}
-    //   label={label}
-    //   helperText={helperText}
-    //   {...controlProps}
-    // >
-    //   <InputStyled {...inputProps} {...props} inputRef={ref} />
-    // </InputControl>
-    <div>input</div>
+    <InputControl
+      fieldError={error}
+      fullWidth={fullWidth}
+      label={label}
+      helperText={helperText}
+      {...controlProps}
+    >
+      <InputStyled {...inputProps} {...props} inputRef={ref} />
+    </InputControl>
   );
 }
 

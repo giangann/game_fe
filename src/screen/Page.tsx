@@ -13,18 +13,14 @@ import { color } from "styles";
 
 interface PageInputProps {
   title?: string;
-  formItem?: string[];
   component?: React.ReactElement | React.ReactElement[];
   listComponentLength?: number;
   helperText?: string;
+  center?: boolean;
 }
 
 const Page: React.FC<PageInputProps> = (props: PageInputProps) => {
-  const { title, formItem, component, listComponentLength, helperText } = props;
-
-  const { control, register, handleSubmit } = useForm();
-
-  // console.log("isArray", component.isArray());
+  const { title, component, helperText, center } = props;
 
   return (
     <Container
@@ -55,10 +51,10 @@ const Page: React.FC<PageInputProps> = (props: PageInputProps) => {
         <Stack
           mt={3}
           mb={3}
-          direction="row"
           spacing={2}
+          alignItems={center ? "center" : ""}
           justifyContent="space-between"
-          sx={{ padding: "0 22px 22px 22px" }}
+          sx={{ padding: "0 22px 22px 22px", position: "relative" }}
         >
           {component}
         </Stack>
